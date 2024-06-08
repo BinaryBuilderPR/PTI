@@ -11,12 +11,11 @@ PTI Sakchi Jamshedpur offers expert repair services for Apple motherboards and c
 - Mac Mini Repair
 - M1 Repair
 
-## Initial Project Setup
+## Initial Project Setup and Contribution
 To get started with the project, follow these steps:
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/BinaryBuilderPR/PTI.git
+1. Fork and Clone the repository.
+   
 2. Navigate to the project directory:
     ```bash
     cd PTI
