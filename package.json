@@ -1,0 +1,22 @@
+{
+  "name": "PTI",
+  "version": "1.0.0",
+  "description": "PTI - Computer and Motherboard Repair Shop",
+  "main": "index.js",
+  "scripts": {
+    "build:css": "npx tailwindcss -i ./css/input.css -o ./css/style.css",
+    "watch:css": "npx tailwindcss -i ./css/input.css -o ./css/style.css --watch"
+  },
+  "keywords": [
+    "computer",
+    "motherboard",
+    "repair",
+    "PTI",
+    "Jamshedpur"
+  ],
+  "author": "PTI Sakchi",
+  "license": "MIT",
+  "devDependencies": {
+    "tailwindcss": "^3.4.4"
+  }
+}
