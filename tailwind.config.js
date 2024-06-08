@@ -9,7 +9,8 @@ module.exports = {
         'blue': {
           100: '#1d1c3e',        
           500: '#2b3493',
-
+          800:'#25245e'
+          
         },
       },
       fontFamily: {
