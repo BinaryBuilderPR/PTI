@@ -1,3 +1,16 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+#slidy img {
+	filter: brightness(60%);
+	background-color: green;
+	/* background-color:; */
+	/* height: 100vh;
+    width: 100vw; */
+	object-fit: contain;
+	background-color: orange;
+	/* opacity: 0.3; */
+}
+
