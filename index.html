@@ -142,20 +142,31 @@
     <!-- Hero Image slide  -->
     
     <div class="h-100">
-        <div id="slidy-container" class="hidden lg:block absolute top-0 w-full overflow-hidden mx-auto h-full z-[-1] -mt-100 min-h-500">
-           <figure id="slidy" class="object-contain">
+        <div id="slidy-container" class="hidden lg:block absolute top-0 w-full overflow-hidden mx-auto h-full z-[-1] -mt-100 max-h-full">
+           <figure id="slidy" class="">
             <img   class="object-contain" src="assets/img/pti-hero-img.png" alt="eyes" >
             <img   class="object-contain" src="assets/img/img1.png" alt="eyes" > 
-            <img   class="object-contain" src="assets/img/img4.png" >
+            <img   class="object-contain" src="assets/img/img4.png" alt="a" >
            </figure>
+           
         </div>
     </div>
-    <img  class="h-100 visible lg:hidden" class="object-contain" src="assets/img/pti-hero-img.png" alt="eyes" >
+    <div id="slidy-container" class="lg:hidden absolute top-0 w-full overflow-hidden mx-auto h-full z-[-1] -mt-100 max-h-full">
+
+    <figure id="slidy" class="">
+      <img   class="object-contain" src="assets/img/pti-hero-img mobile.jpeg" alt="eyes" >
+      <img   class="object-contain" src="assets/img/img1 mobile.jpeg" alt="eyes" > 
+      <img   class="object-contain" src="assets/img/img 4 mobile .jpeg" alt="a" >
+     </figure>
+
+    </div>
+    
+    <!-- <img  class="h-100 visible lg:hidden" class="object-contain" src="assets/img/pti-hero-img.png" alt="eyes" > -->
 
 
-    <!--  -->
-    <div class="h-100vh text-white w-2/5 mt-24 ml-24">
-    <h1 class="text-6xl leading-tight text-white font-bold capitalize mb-8  ">Repair Your Laptop Mac &  Computer</h1>    
+    <!-- bg-emerald-300  -->
+    <div class="h-100vh text-white lg:w-2/5 md:w-3/5 mt-14 md:mt-24  mx-12 md:mx-24 s">
+    <h1 class="text-4xl md:text-5xl lg:text-6xl leading-tight text-white font-bold capitalize mb-8 ">Repair Your Laptop Mac &  Computer</h1>    
      <p>PTI Sakchi Jamshedpur offers specialized repair services for Apple motherboards and computers. We excel in motherboard repair, computer repair, and other related services. Trust us for reliable and efficient repairs.</p>
     <!-- <h1 class="text-6xl leading-tight text-white font-bold capitalize m-28 w-2/5" >Repair Your Laptop Mac &  Computer</h1>     -->
     <div class="custom-transform transition-all duration-[1500ms] ease-[ease] w-[9116px]">
@@ -168,7 +179,7 @@
     }
     </style>
 
-    <button class="text-white mt-6 mr-6 text-lg px-6 py-3 leading-none transition-all duration-500 capitalize relative cursor-pointer rounded text-center overflow-hidden z-10 bg-blue-500 hover:bg-blue-700">
+    <button class="text-white mt-6 mr-2 md:mr-6 text-lg px-6 py-3 leading-none transition-all duration-500 capitalize relative cursor-pointer rounded text-center overflow-hidden z-10 bg-blue-500 hover:bg-blue-700">
       Get Directions
     </button>
 
