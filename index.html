@@ -4,10 +4,11 @@
         <meta charset="utf-8" />
  
         <meta name="author" content="PIT Sakchi" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>PTI - Motherboard & Apple Repair</title>
 
         <!-- Accessibility Considerations: Ensure your favicon is accessible to users with disabilities. -->
-        <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon" alt="Website Favicon">
+        <link rel="icon" href="assets/favicon/favicon.ico" type="image/x-icon" alt="Websit`e Favicon">
 
 
         <!-- Apple Touch Icon: For iOS devices -->
@@ -37,7 +38,7 @@
     </head>
     <body class="">
     <!-- Alert Section Starts  -->
-        <div role="alert" class="z-[1] text-white bg-blue-800 lg:bg-blue-100/[.75]  w-full bg-red-900 flex-col flex lg:flex-row justify-between py-3  px-16 items-center"  style="opacity: 1;">
+        <div role="alert" class="z-[1] text-white bg-blue-800 lg:bg-blue-100/[.75]  w-full bg-red-900 flex-col flex lg:flex-row justify-between py-3  px-10 items-center"  style="opacity: 1;">
             <p class="text-xs md:text-sm text-center">Welcome To PTI Sakchi, Motherboard Repair Shop</p>
             <div class="text-sm text-center mt-2 md:mt-auto">
                 <ul class="">
@@ -142,32 +143,55 @@
     <!-- Hero Image slide  -->
     
     <div class="h-100">
-        <div id="slidy-container" class="hidden lg:block absolute top-0 w-full overflow-hidden mx-auto h-full z-[-1] -mt-100 max-h-full">
+        <div id="slidy-container" class="block absolute top-30 md:top-0  w-full overflow-hidden mx-auto h-full z-[-1] -mt-100 max-h-full ">
            <figure id="slidy" class="">
-            <img   class="object-contain" src="assets/img/pti-hero-img.png" alt="eyes" >
+            <!-- <img   class="object-contain" src="assets/img/pti-hero-img.png" alt="eyes" >
             <img   class="object-contain" src="assets/img/img1.png" alt="eyes" > 
-            <img   class="object-contain" src="assets/img/img4.png" alt="a" >
-           </figure>
+            <img   class="object-contain" src="assets/img/img4.png" alt="a" > -->
+            <picture>
+              <!-- Image for Laptops and PCs (desktops) -->
+              <source srcset="assets/img/img4-mobile.jpeg" media="(max-width: 1023px)">
+              <source srcset="assets/img/img4.png" media="(min-width: 1024px)">
+              <!-- Image for Tablets and Mobile devices -->
+              <!-- Fallback image if none of the media queries match -->
+              <img src="assets/img/img4-mobile.jpeg" alt="Responsive Image">
+            </picture>
+            <picture>
+              <!-- Image for Laptops and PCs (desktops) -->
+              <source srcset="assets/img/pti-hero-img-mobile.jpeg" media="(max-width: 1023px)">
+              <source srcset="assets/img/pti-hero-img.png" media="(min-width: 1024px)">
+              <!-- Image for Tablets and Mobile devices -->
+              <!-- Fallback image if none of the media queries match -->
+              <img src="assets/img/pti-hero-img.png" alt="Responsive Image">
+            </picture>
+            <picture>
+              <!-- Image for Laptops and PCs (desktops) -->
+              <source srcset="assets/img/img1-mobile.jpeg" media="(max-width: 1023px)">
+              <source srcset="assets/img/img1.png" media="(min-width: 1024px)">
+              <!-- Image for Tablets and Mobile devices -->
+              <!-- Fallback image if none of the media queries match -->
+              <img src="assets/img/img1-mobile.jpeg" alt="Responsive Image">
+            </picture>
+           
+
+
+          </figure> 
            
         </div>
     </div>
-    <div id="slidy-container" class="lg:hidden absolute top-0 w-full overflow-hidden mx-auto h-full z-[-1] -mt-100 max-h-full">
 
-    <figure id="slidy" class="">
-      <img   class="object-contain" src="assets/img/pti-hero-img mobile.jpeg" alt="eyes" >
-      <img   class="object-contain" src="assets/img/img1 mobile.jpeg" alt="eyes" > 
-      <img   class="object-contain" src="assets/img/img 4 mobile .jpeg" alt="a" >
-     </figure>
 
+    </div>
+ 
     </div>
     
     <!-- <img  class="h-100 visible lg:hidden" class="object-contain" src="assets/img/pti-hero-img.png" alt="eyes" > -->
 
 
     <!-- bg-emerald-300  -->
-    <div class="h-100vh text-white lg:w-2/5 md:w-3/5 mt-14 md:mt-24  mx-12 md:mx-24 s">
-    <h1 class="text-4xl md:text-5xl lg:text-6xl leading-tight text-white font-bold capitalize mb-8 ">Repair Your Laptop Mac &  Computer</h1>    
-     <p>PTI Sakchi Jamshedpur offers specialized repair services for Apple motherboards and computers. We excel in motherboard repair, computer repair, and other related services. Trust us for reliable and efficient repairs.</p>
+    <div class="h-100vh text-white lg:w-2/5 md:w-3/5  mt-10 md:mt-24  mx-10 md:mx-24 ">
+    <h1 class="text-3xl md:text-5xl lg:text-6xl leading-tight text-white font-bold capitalize  mb-4 md:mb-1 ">Repair Your Laptop Mac &  Computer</h1>    
+     <p class="text-x">PTI Sakchi Jamshedpur offers specialized repair services for Apple motherboards and computers. We excel in motherboard repair, computer repair, and other related services. Trust us for reliable and efficient repairs.</p>
     <!-- <h1 class="text-6xl leading-tight text-white font-bold capitalize m-28 w-2/5" >Repair Your Laptop Mac &  Computer</h1>     -->
     <div class="custom-transform transition-all duration-[1500ms] ease-[ease] w-[9116px]">
       <!-- Your content here -->
