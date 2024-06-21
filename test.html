@@ -3,38 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Images</title>
-    <style>
-        body {
-            margin: 0;
-            padding: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background-color: #f0f0f0;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-        }
-    </style>
+    <title>Parallax Effect with Tailwind CSS</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-
-sm	640px	@media (min-width: 640px) { ... }
-md	768px	@media (min-width: 768px) { ... }
-lg	1024px	@media (min-width: 1024px) { ... }
-xl	1280px	@media (min-width: 1280px) { ... }
-2xl	1536px	@media (min-width: 1536px) { ... }
-    <picture>
-        <!-- Image for Laptops and PCs (desktops) -->
-        <source srcset="assets/img/img4.png" media="(min-width: 1024px)">
-        <!-- Image for Tablets and Mobile devices -->
-        <source srcset="assets/img/img4-mobile.jpeg" media="(max-width: 1023px)">
-        <!-- Fallback image if none of the media queries match -->
-        <img src="assets/img/img4.png" alt="Responsive Image">
-    </picture>
+    <div class="parallax bg-fixed bg-center bg-cover h-screen" style="background-image: url('./assets/img/bg-mobile-fallback.jpg');">
+        <div class="h-full flex items-center justify-center text-white text-4xl font-bold">
+            Welcome to the Parallax Effect
+        </div>
+    </div>
+    <div class="content-section h-screen bg-white flex items-center justify-center text-center">
+        <div>
+            <h1 class="text-3xl font-bold">Content Section</h1>
+            <p class="mt-4">Scroll down to see the parallax effect in action.</p>
+        </div>
+    </div>
+    <div class="parallax bg-fixed bg-center bg-cover h-screen" style="background-image: url('./assets/img/keyboard-70506_1280.jpg');">
+        <div class="h-full flex items-center justify-center text-white text-4xl font-bold">
+            Another Parallax Section
+        </div>
+    </div>
+    <div class="content-section h-screen bg-white flex items-center justify-center text-center">
+        <div>
+            <h1 class="text-3xl font-bold">Another Content Section</h1>
+            <p class="mt-4">This is another content section to demonstrate the parallax effect.</p>
+        </div>
+    </div>
 </body>
 </html>

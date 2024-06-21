@@ -1,0 +1,61 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Ensure the body takes the full viewport */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Style the parallax section */
+.parallax-section {
+   
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.parallax-background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 150%; /* Increase height to create more scrolling effect */
+    background-image: url('https://via.placeholder.com/1600x900'); /* Replace with your actual background image URL */
+    background-size: cover;
+    background-position: center;
+    transform: translate3d(0, 0, 0); /* Promote to a layer for better performance */
+}
+
+.content {
+    position: relative;
+    z-index: 1; /* Ensure content is above background */
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 50px;
+    text-align: center;
+    color: white;
+}
+
+/* Style the scrollable content section */
+.scrollable-content {
+    padding: 100px 0; /* Adjust padding as needed */
+    background-color: #f0f0f0; /* Example background color */
+    text-align: center; /* Center align content */
+}
+
+.scrollable-content img {
+    max-width: 100%;
+    height: auto;
+    margin-top: 20px;
+}
+
+/* Style the next section */
+.next-section {
+    padding: 100px 0; /* Adjust padding as needed */
+    background-color: #ffffff; /* Example background color */
+    text-align: center; /* Center align content */
+}
