@@ -808,6 +808,10 @@ video {
   height: 2.5rem;
 }
 
+.h-\[200vh\] {
+  height: 200vh;
+}
+
 .max-h-\[40px\] {
   max-height: 40px;
 }
@@ -975,6 +979,10 @@ video {
 
 .overflow-hidden {
   overflow: hidden;
+}
+
+.overflow-scroll {
+  overflow: scroll;
 }
 
 .rounded {
