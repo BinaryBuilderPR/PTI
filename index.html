@@ -245,7 +245,7 @@
          
        </div>
        <div class="w-[full] lg:w-1/2 px-3 md:px-20">
-        <!-- <img src="./assets/img/img3.png" alt="" srcset=""> -->
+        <!-- <img src="./assets/img/s.png" alt="" srcset=""> -->
         <div class="relative h-max">
           <img src="./assets/img/img4-mobile.jpeg" class="under  sm:absolute h-[20rem] md:h-[30rem] w-full  md:w-[25rem] my-6 md:my-0 left-0 top-0 z-[-1] rounded-lg md:rounded-none  object-fil " />
           
@@ -318,16 +318,19 @@
 
         </div>
     </div>
-    <div class="-section h-screen bg-white flex items-center justify-center text-center">
-        <div>
-            <h1 class="text-3xl font-bold">Content Section</h1>
-            <p class="mt-4">Scroll down to see the parallax effect in action.</p>
-        </div>
-    </div>
+   
   </section>
-  <!-- Repair Area  End-->
+
+  <section class="-section  bg-white flex items-center justify-center text-center ">
   
-    <div class="parallax bg-fixed bg-center bg-cover h-screen" style="background-image: url('./assets/img/keyboard-70506_1280.jpg');">
+      <canvas id="stars" class="bg-blue-300  top-0 left-0 w-full h-[25rem] z-0">
+      </canvas>
+     </div>
+  </section>
+
+  <!-- Repair Area  End-->
+  <section>
+    <div class="parallax bg-fixed bg-center bg-cover h-screen relative" style="background-image: url('./assets/img/keyboard-70506_1280.jpg');">
         <div class="h-full flex items-center justify-center text-white text-4xl font-bold">
             Another Parallax Section
         </div>
@@ -339,12 +342,19 @@
         </div>
     </div>
    
+  </section>
     
     
     <!--  -->
     
     <!-- Scripts -->
         <script src="./js/slide.js"></script>
+        External JavaScript
+
+        <!-- for start js -->
+        <script src="http://requirejs.org/docs/release/2.1.15/minified/require.js"></script>
+        <script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
+        <script src="./js/DrifterStars.js"></script>
 
     </body>
 </html>
