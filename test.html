@@ -1,92 +1,92 @@
 <!DOCTYPE html>
+<!-- Coding By CodingNepal - codingnepalweb.com -->
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Parallax Effect with Tailwind CSS</title>
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
-</head>
-<body>
-    <div class="parallax bg-fixed bg-center bg-cover h-screen" style="background-image: url('./assets/img/bg-mobile-fallback.jpg');">
-        <div class="h-full flex items-center justify-center text-white text-4xl font-bold">
-            Welcome to the Parallax Effect
-        </div>
-    </div>
-    <div class="content-section h-screen bg-white r">
-            <!-- <h1 class="text-3xl font-bold">Content Section</h1> -->
-            <!-- <p class="mt-4">Scroll down to see the parallax effect in action.</p> -->
-            <!-- <canvas id="stars" class="bg-blue-500 w-full z-0"></canvas> -->
-    </div>
-    <div id="canvas-container">
-        <canvas id="stars" class="bg-red h-10 z-10"></canvas>
-        <div class="overlay-content">
-            <h1>Text Over Canvas</h1>
-            <div class="inner-div">
-                <p>This is a div with text over the canvas.</p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Testimonial Slider</title>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
+  
+  <link rel="stylesheet" href="css/swiper-bundle.min.css">
+    <!-- Swiper CSS -->
+    <!-- <link rel="stylesheet" href="css/swiper-bundle.min.css" /> -->
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/test.css" />
+
+    <!-- Boxicons CSS -->
+    <link
+    
+  </head>
+  <body>
+    <section class="container">
+      <div class="testimonial mySwiper">
+        <div class="testi-content swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="./assets/img/alexandre-debieve-FO7JIlwjOtU-unsplash_mobile.jpeg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
             </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="./assets/img/computer-1839080_1280.jpg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="./assets/img/1.png" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+          
         </div>
-    </div>
-    <div class="parallax bg-fixed bg-center bg-cover h-screen" style="background-image: url('./assets/img/keyboard-70506_1280.jpg');">
-        <div class="h-full flex items-center justify-center text-white text-4xl font-bold">
-            Another Parallax Section
-        </div>
-    </div>
-    <div class="content-section h-screen bg-white flex items-center justify-center text-center">
-        <div>
-            <h1 class="text-3xl font-bold">Another Content Section</h1>
-            <p class="mt-4">This is another content section to demonstrate the parallax effect.</p>
-        </div>
-    </div>
-</body>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </section>
 
-
-    <style>
-        #canvas-container {
-            position: relative;
-            width: 100%;
-            height: 400px; /* Example height */
-            background-color: red;
-        }
-
-        #stars {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-        }
-
-        .overlay-content {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            text-align: center;
-        }
-
-        .overlay-content h1 {
-            /* font-size: 2rem; */
-            color: #333;
-        }
-
-        .overlay-content .inner-div {
-            padding: 1rem;
-            background-color: rgba(255, 255, 255, 0.8);
-            border-radius: 8px;
-        }
-    </style>
-
-
-
-
-</body>
-
-
-<!-- <script src="./js/slide.js"></script> -->
-        
-<!-- External JavaScript -->
-<script src="http://requirejs.org/docs/release/2.1.15/minified/require.js"></script>
-<script src="https://rawgit.com/ironwallaby/delaunay/master/delaunay.js"></script>
-<script src="./js/DrifterStars.js"></script>
+    <!-- Swiper JS -->
+    <!-- <script src="js/swiper-bundle.min.js"></script> -->
+    <!-- JavaScript -->
+    
+  <script src="./js/swiper-bundle.min.js"></script>
+  <script src="js/test.js"></script>
+  </body>
 </html>
