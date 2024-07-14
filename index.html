@@ -82,8 +82,24 @@
                 class="mr-4 block cursor-pointer py-1.5 font-sans text-base font-medium leading-relaxed text-inherit antialiased">
                 <img class="h-[32px] w-[32px]" src="./assets/favicon/android-chrome-512x512.png" alt="PTI Logo">
             </a>
-              <div class="flex items-center gap-4">
-                <div class="hidden mr-4 lg:block">
+              <div id="toggleDiv" class="hidden absolute top-[0rem] lg:top-auto  right-0    lg:flex items-center gap-4 ">
+                <div  class="menudev lg:mr-4 lg:block w-48 lg:w-full h-10vh  bg-white/[.90] lg:bg-inherit rounded-bl-lg">
+                  <!--  -->
+                  <style>
+                    .menudev{
+                      animation: move .5s ease-out alternate;
+                    }
+                     @keyframes move {
+                      
+
+                      0%{ transform: translateX(12rem);
+                      }
+
+                      100%{
+                        transform: translateX(0rem);
+                      }
+                     }
+                  </style>
                   <ul class="flex flex-col gap-2 mt-2 mb-4 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
                     <li class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
                       <a href="#facilities" class="flex items-center">
@@ -109,10 +125,36 @@
                         Reviews
                       </a>
                     </li>
+
+                    <li class="block p-1 font-sans text-sm antialiased font-normal leading-normal text-blue-gray-900">
+                      <a href="#footer" class="flex items-center">
+                        Contact Us
+                      </a>
+                    </li>
                   </ul>
                 </div>
-               
+
               </div>
+              <div id="toggleBtn" class="block lg:hidden relative h-10 w-10">
+                <img id="burgerMenu" class=" absolute h-10" src="assets/img/svg/burger-menu-svgrepo-com.svg"  alt="">
+                <img id="crossMenu" class="hidden absolute  h-10" src="assets/img/svg/cross-svgrepo-com.svg"  alt="">
+             <!-- hidden -->
+              </div>
+              <script>
+                 const toggleBtn = document.getElementById('toggleBtn');
+                  // Get the div element to toggle
+                  const toggleDiv = document.getElementById('toggleDiv');
+                  const burgerMenu=document.getElementById("burgerMenu");
+                  const crossMenu=document.getElementById("crossMenu")
+
+                  // Toggle the 'active' class on div when button is clicked
+                  toggleBtn.addEventListener('click', function() {
+                      toggleDiv.classList.toggle('hidden');
+                      console.log("toggle")
+                      burgerMenu.classList.toggle('hidden');
+                      crossMenu.classList.toggle('hidden');
+                    });
+              </script>
             </div>
           </nav>
           <!-- <div class="max-w-screen-md py-12 mx-auto">
